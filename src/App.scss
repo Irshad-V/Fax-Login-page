@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif
+}
+
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #204d6a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 30px;
+
+
+    @media screen and (max-width:630px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+       
+    }
+    .box-login {
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        background: #2c6c8f;
+        color: white;
+        padding: 40px;
+        border-radius: 25px;
+        border: 10px solid #215a78;
+        
+
+        .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+
+            h1 {
+                font-size: 50px;
+                color: #FE7D00;
+
+                span {
+                    color: #1ba7e0;
+                }
+            }
+
+            p {
+                position: relative;
+                top: -35px;
+            }
+        }
+
+        h1 {
+            padding-bottom: 20px;
+
+        }
+
+        .user-password {
+            padding: 8px;
+
+            display: flex;
+            align-items: center;
+
+            div {
+                margin-right: 10px;
+                width: 70px;
+            }
+
+            input {
+                border-radius: 25px;
+                border: 0;
+                height: 30px;
+                width: 250px;
+            }
+        }
+
+        .forgot {
+            padding-top: 5px; 
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            .check-box {
+                display: flex;
+                flex-direction: row;
+                margin-right: 10px;
+
+                input {
+                    margin-right: 5px;
+                    border-radius: 10px;
+                }
+            }
+
+        }
+
+
+        button {
+            width: 150px;
+            padding: 5px;
+            margin: 40px;
+            border: 1px solid red;
+            font-weight: 900;
+            border-radius: 20px;
+
+
+        }
+     
+    }
+    @media screen and (max-width:500px) {
+        padding: 10px;
+           
+       .box-login{
+        max-width: 350px;
+        padding: 20px;
+        .user-password{
+            padding: 4px;
+            div{
+                margin-right: 2px;
+              
+            }
+            input{
+                width: 150px;
+            }
+           }
+
+       } 
+       
+    }
+    @media screen and (max-width:300px) {
+        padding: 0;
+           
+       .box-login{
+        max-width: 300px;
+        padding: 20px;
+        .user-password{
+            padding: 2px;
+            div{
+                margin-right: 2px;
+            }
+           }
+
+       } 
+       
+
+      
+       
+    }
+ 
+   
+
+}
+
+// .arrow-right {
+//     width: 0;
+//     height: 0;
+//     border-top: 360px solid transparent;
+//     border-bottom: 360px solid transparent;
+
+//     border-left: 440px solid green;
+// }
