@@ -23,8 +23,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         align-items: center;
-       
+
     }
+
     .box-login {
         max-width: 500px;
         display: flex;
@@ -36,7 +37,7 @@
         padding: 40px;
         border-radius: 25px;
         border: 10px solid #215a78;
-        
+
 
         .heading {
             display: flex;
@@ -55,6 +56,8 @@
             }
 
             p {
+
+
                 position: relative;
                 top: -35px;
             }
@@ -85,7 +88,7 @@
         }
 
         .forgot {
-            padding-top: 5px; 
+            padding-top: 5px;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -114,49 +117,56 @@
 
 
         }
-     
+
     }
+
     @media screen and (max-width:500px) {
         padding: 10px;
-           
-       .box-login{
-        max-width: 350px;
-        padding: 20px;
-        .user-password{
-            padding: 4px;
-            div{
-                margin-right: 2px;
-              
-            }
-            input{
-                width: 150px;
-            }
-           }
 
-       } 
-       
+        .box-login {
+            max-width: 350px;
+            padding: 20px;
+
+            .user-password {
+                padding: 4px;
+
+                div {
+                    margin-right: 2px;
+
+                }
+
+                input {
+                    width: 150px;
+                }
+            }
+
+        }
+
     }
+
     @media screen and (max-width:300px) {
         padding: 0;
-           
-       .box-login{
-        max-width: 300px;
-        padding: 20px;
-        .user-password{
-            padding: 2px;
-            div{
-                margin-right: 2px;
+
+        .box-login {
+            max-width: 300px;
+            padding: 20px;
+
+            .user-password {
+                padding: 2px;
+
+                div {
+                    margin-right: 2px;
+                }
             }
-           }
 
-       } 
-       
+        }
 
-      
-       
+
+
+
     }
- 
-   
+
+
 
 }
 
@@ -168,3 +178,250 @@
 
 //     border-left: 440px solid green;
 // }
+
+
+
+
+// fax.jsx page scss
+
+.fax-container {
+    background: #204d6a;
+    padding: 0 .5rem 1.5rem;
+    // height: 100vh;
+
+    .fax-box {
+        font-family: Calibri, sans-serif;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 0 .5rem;
+
+        .fax-user {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                padding-left: 2rem;
+
+                @media screen and (max-width:450px) {
+                    display: none;
+
+                }
+            }
+
+            i {
+                @media screen and (max-width:450px) {
+                    display: none;
+
+                }
+            }
+
+            .user-icon {
+                display: flex;
+                align-items: center;
+                padding-left: 2rem;
+
+                i {
+                    padding-right: .4rem;
+                }
+
+                p {
+                    padding: 0;
+                }
+
+                @media screen and (max-width:750px) {
+                    display: none;
+
+                }
+
+
+
+
+            }
+
+            .ocr-status-check {
+                display: flex;
+                @extend p;
+
+                input {
+                    width: 100px;
+                    border-radius: 25px;
+                    margin-left: 1px;
+                }
+
+                @media screen and (max-width:1250px) {
+                    display: none;
+
+                }
+            }
+
+        }
+
+        .titile {
+            color: #FE7D00;
+
+
+        }
+
+        .fax-data {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .user-icon {
+                display: flex;
+                align-items: center;
+                padding-left: 2rem;
+
+                i {
+                    padding: 0 .5rem;
+                }
+            }
+
+            .heading {
+                display: block;
+                padding-left: 2rem;
+
+                align-items: center;
+                position: relative;
+                text-align: end;
+
+
+                h1 {
+                    padding-top: .4rem;
+                    font-size: 30px;
+                    color: #FE7D00;
+                    padding-right: .7rem;
+
+                    span {
+                        color: #1ba7e0;
+                    }
+                }
+
+                p {
+                    position: relative;
+                    top: -9px;
+                    font-size: 10PX;
+                    text-align: center;
+                }
+            }
+
+            .one {
+                @media screen and (max-width:1020px) {
+                    display: none;
+
+                }
+
+            }
+
+            .two {
+                @media screen and (max-width:1020px) {
+                    display: none;
+
+                }
+
+            }
+
+            .list {
+                @media screen and (max-width:750px) {
+                    display: none;
+
+                }
+            }
+
+            .log-out {
+                @media screen and (max-width:350px) {
+                    display: none;
+
+                }
+            }
+
+        }
+
+
+
+
+
+    }
+}
+
+
+// FAX-TABLE JSX PAGE
+
+
+.table {
+    background-color: white;
+    width: 100%;
+    border-collapse: collapse;
+
+
+
+    th {
+        padding: 12px 15px;
+        text-align: center;
+        font-size: 16px;
+        background-color: #C7DDE8;
+        color: #3E5D71;
+        border: 1px solid #ddd;
+
+    }
+
+    td {
+        padding: 7px 15px;
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid #ddd;
+    }
+
+
+    tbody tr:nth-child(even) {
+        background-color: #d9d7d7;
+        border: 1px solid #ddd;
+
+    }
+
+    @media screen and (max-width:850px) {
+
+        thead {
+            display: none;
+        }
+
+        tbody,
+        tr,
+        td {
+            display: block;
+            width: 100%;
+        }
+
+        tr {
+            margin-bottom: 15px;
+        }
+
+        td {
+            text-align: right;
+            padding-left: 50%;
+            text-align: right;
+            position: relative;
+            padding-right: 3rem;
+
+            &::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                text-align: left;
+                padding-left: 3rem;
+            }
+        }
+
+
+    }
+
+}
