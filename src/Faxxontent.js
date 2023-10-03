@@ -24,6 +24,40 @@
         ocrStatus: "Error"
     },
     {
+        faxID: "100234",
+        caseID: "100b49",
+        faxStatus: "new",
+        verified: "yes",
+        mainFaxID: "NA",
+        faxDate: "1/3/2023",
+        faxTime: "8;00",
+        senderFaxNumber: "(206)342-8631",
+        ocrStatus: "ready"
+    },
+    {
+        faxID: "100212",
+        caseID: "100b89",
+        faxStatus: "new",
+        verified: "no",
+        mainFaxID: "NA",
+        faxDate: "2/3/2023",
+        faxTime: "9:00",
+        senderFaxNumber: "(206)342-278",
+        ocrStatus: "Error"
+    },
+  
+    {
+        faxID: "100212",
+        caseID: "100b89",
+        faxStatus: "new",
+        verified: "no",
+        mainFaxID: "NA",
+        faxDate: "2/3/2023",
+        faxTime: "9:00",
+        senderFaxNumber: "(206)342-278",
+        ocrStatus: "Error"
+    },
+    {
         faxID: "100233",
         caseID: "10099",
         faxStatus: "duplicate",

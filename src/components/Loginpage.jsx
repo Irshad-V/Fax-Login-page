@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 function Loginpage() {
     return (
         <div className='container'>
@@ -32,8 +33,8 @@ function Loginpage() {
                     </div>
                     <p>forgot User ID/password</p>
                 </div>
-
-                <button>Login</button>
+                <Link to="/fax"> <button  >Login</button></Link>
+               
 
             </div>
             <div class="box">
